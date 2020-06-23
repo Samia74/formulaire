@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+    <body>
+            <h1>Formulaire d'enquête sur les réseaux sociaux</h1>
+                   
+            <form class="forma"action="">
+                <fieldset>  
+                     <h3>Veuillez remplir tous les champs</h3>
+                
+                  <div class="identite">
+   
+                        <label for="name">*Votre nom</label>
+                        <input type="text" required="required" name="names" id="name" placeholder="votre nom"><br><br>
+
+                        <label for="email">*Votre mail</label>
+                        <input type="text" required="required" name="email" id="email" placeholder="votre mail"> <br> <br>
+
+                        <label class="age" for="number">*Age  </label> 
+                        <input type="number" required="required" id="number" name="amount" value="age" min="18" max="100"> <br><br>
+                   </div> <!-- /*identite*/ -->
+    
+                    <div class="social">
+                            <label for="social">Quel réseaux sociaux utilisez vous? </label>
+                            <select id="social">
+                                <option value="option" selected>selectionner</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Twitter">Twitter</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="tik-tok">Tik tok</option>
+                                <option value="snapchat">Snapchat</option>
+                            </select>
+                    </div> <!-- /*social*/ -->
+
+                    <div class="time">
+                        <p>Combien d'heures les utilisez vous ? </p>
+                            <div class="temps"><input type="radio" id="group" name="un">
+                            <label for="group">0-1 heure</label> <br>
+                            <input type="radio" id="group" name="deux">
+                            <label for="group">1-2 heure</label> <br>
+                            <input type="radio" id="group" name="trois">
+                            <label for="group">2-3 heure</label> <br>
+                            <input type="radio" id="group" name="quatre">
+                            <label for="group">3-4 heure</label> <br>
+                            <input type="radio" id="group" name="cinq">
+                            <label for="group">4h+</label> <br></div>
+                     </div> <!--/*time*/ -->
+
+                    <div class="raisons"> 
+                            <p>Pourquoi utilisez-vous cette application ? </p>
+                            <div class="pkoi"><input type="checkbox" id="group" name="Actualités">
+                            <label for="group">Actualités</label> <br>
+                            <input type="checkbox" id="group" name="Professionnel">
+                            <label for="group">Professionnel</label> <br>
+                            <input type="checkbox" id="group" name="voyages">
+                            <label for="group">Voyages</label> <br>
+                            <input type="checkbox" id="group" name="loisirs">
+                            <label for="group">Passe-temps</label> <br>
+                            <input type="checkbox" id="group" name="inspiration">
+                            <label for="group">Inspiration</label> <br>
+                            <input type="checkbox" id="group" name="photo">
+                            <label for="group">Photo</label> <br>
+                            <input type="checkbox" id="group" name="video">
+                            <label for="group">Vidéo</label> <br>
+                    </div> </div><!-- /*raisons*/ --> <br> <br>
+            
+                    <div class="message">
+                        <p>Des commentaires ou des suggestions : </p> 
+                       <div class="bouton"> <textarea name="mail" id="echange" cols="20" rows="3" placeholder="Dites nous tout!"></textarea> <br>
+                        <button type="button"> Envoyer </button></div> <br>
+                    </div><!--message --> <br>
+                </fieldset>
+            </form>
+    </body>
+</html>
